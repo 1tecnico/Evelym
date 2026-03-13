@@ -1,226 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Mochila Virtual - 2º Ano</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<title>Mochila Virtual - 2º Ano</title>
 
-        header {
-            background-color: #4a90e2;
-            color: pink;
-            padding: 20px;
-            text-align: center;
-        }
+<style>
 
-        .container {
-            padding: 20px;
-        }
+body{
+font-family: Arial, sans-serif;
+background-color:#ffd6e7;
+margin:0;
+padding:0;
+}
 
-        .disciplina {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-        }
+header{
+background-color:#ff69b4;
+color:white;
+padding:20px;
+text-align:center;
+}
 
-        h2 {
-            margin-top: 0;
-        }
+.container{
+padding:20px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+}
 
-        textarea {
-            width: 100%;
-            height: 80px;
-            margin-top: 10px;
-        }
+.disciplina{
+background-color:#fff0f6;
+padding:15px;
+border-radius:10px;
+box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+}
 
-        input[type="file"] {
-            margin-top: 10px;
-        }
+h2{
+margin-top:0;
+font-size:16px;
+}
 
-        footer {
-            background-color: #4a90e2;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
+textarea{
+width:100%;
+height:50px;
+margin-top:10px;
+background-color:#ffe4ef;
+border:1px solid #ff69b4;
+border-radius:5px;
+resize:none;
+}
 
-        button {
-            background-color: #4a90e2;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+input[type="file"]{
+margin-top:10px;
+}
 
-        button:hover {
-            background-color: #357ABD;
-        }
-    </style>
+footer{
+background-color:#ff69b4;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+button{
+background-color:#ff69b4;
+color:white;
+border:none;
+padding:8px 12px;
+border-radius:5px;
+cursor:pointer;
+margin-top:10px;
+}
+
+button:hover{
+background-color:#ff4fa3;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>🎒 Mochila Virtual - 2º Ano do Ensino Médio</h1>
+<h1>🎒 Mochila Virtual - 2º Ano do Ensino Médio</h1>
 </header>
 
 <div class="container">
 
-    <div class="disciplina">
-        <h2>📘 Matemática</h2>
-        <textarea placeholder="Anotações de Matemática..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>📘 Matemática</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>📗 Português</h2>
-        <textarea placeholder="Anotações de Português..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>📗 Português</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>📕 História</h2>
-        <textarea placeholder="Anotações de História..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>📕 História</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>📙 Geografia</h2>
-        <textarea placeholder="Anotações de Geografia..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>📙 Geografia</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🧪 Química</h2>
-        <textarea placeholder="Anotações de Química..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🧪 Química</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🔬 Física</h2>
-        <textarea placeholder="Anotações de Física..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🔬 Física</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🧬 Biologia</h2>
-        <textarea placeholder="Anotações de Biologia..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🧬 Biologia</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🌎 Inglês</h2>
-        <textarea placeholder="Anotações de Inglês..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🌎 Inglês</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <!-- NOVAS MATÉRIAS -->
+<div class="disciplina">
+<h2>🎨 Artes</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🎨 Artes</h2>
-        <textarea placeholder="Anotações de Artes..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🏃 Educação Física</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🏃 Educação Física</h2>
-        <textarea placeholder="Anotações de Educação Física..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🤔 Filosofia</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🤔 Filosofia</h2>
-        <textarea placeholder="Anotações de Filosofia..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>👥 Sociologia</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>👥 Sociologia</h2>
-        <textarea placeholder="Anotações de Sociologia..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🌱 Projeto de Vida</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🌱 Projeto de Vida</h2>
-        <textarea placeholder="Anotações de Projeto de Vida..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>💻 Lógica de Programação</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>💻 Lógica de Programação</h2>
-        <textarea placeholder="Anotações de Lógica de Programação..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🌐 Programação Web</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>🌐 Programação Web</h2>
-        <textarea placeholder="Anotações de Programação Web..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>☕ POO Java</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>☕ POO Java</h2>
-        <textarea placeholder="Anotações de POO em Java..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>⚙️ Soluções Operacionais</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>⚙️ Soluções Operacionais</h2>
-        <textarea placeholder="Anotações de Soluções Operacionais..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>📚 Estudos Orientados</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
-    <div class="disciplina">
-        <h2>📚 Estudos Orientados</h2>
-        <textarea placeholder="Anotações de Estudos Orientados..."></textarea>
-        <br>
-        <input type="file">
-    </div>
-    
-    <div class="disciplina">
-        <h2>📚Arquitedura e Manutenção de Computadores </h2>
-        <textarea placeholder="Anotações de Estudos Orientados..."></textarea>
-        <br>
-        <input type="file">
-    </div>
-    
-    <div class="disciplina">
-        <h2>📚Noções de Robotica </h2>
-        <textarea placeholder="Anotações de Estudos Orientados..."></textarea>
-        <br>
-        <input type="file">
-    </div>
+<div class="disciplina">
+<h2>🖥️ Arquitetura e Manutenção</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
+
+<div class="disciplina">
+<h2>🤖 Noções de Robótica</h2>
+<textarea placeholder="Anotações..."></textarea>
+<input type="file">
+</div>
 
 </div>
 
 <footer>
-    © 2026 - Minha Mochila Virtual
+© 2026 - Minha Mochila Virtual
 </footer>
 
 </body>
