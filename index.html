@@ -31,18 +31,24 @@ pointer-events:none;
 
 .nome{
 position:absolute;
-font-size:40px;
-color: rgba(255, 105, 180, 0.15);
+font-size:35px;
+color: rgba(255, 20, 147, 0.25); /* mais rosa */
 font-family: "Brush Script MT", cursive;
 }
 
-/* CONTEÚDO NA FRENTE */
+/* TÍTULO FOFO */
+h1{
+font-family: "Brush Script MT", cursive;
+font-size:40px;
+color:#ffe4ef;
+}
+
+/* CONTEÚDO */
 header, .container, footer{
 position: relative;
 z-index:1;
 }
 
-/* Tela mais larga */
 .container{
 padding:20px;
 display:grid;
@@ -54,9 +60,8 @@ margin:auto;
 
 header{
 background-color:#ff69b4;
-color:white;
-padding:20px;
 text-align:center;
+padding:20px;
 border-bottom:3px solid #ff4fa3;
 }
 
@@ -70,11 +75,6 @@ transition:0.3s;
 
 .disciplina:hover{
 transform:scale(1.05);
-}
-
-h2{
-margin-top:0;
-font-size:16px;
 }
 
 textarea{
@@ -100,7 +100,7 @@ padding:10px;
 margin-top:20px;
 }
 
-/* TELA DE LOGIN */
+/* LOGIN */
 #login{
 position:fixed;
 top:0;
@@ -145,11 +145,11 @@ cursor:pointer;
 <button onclick="entrar()">Entrar</button>
 </div>
 
-<!-- FUNDO COM NOMES -->
+<!-- FUNDO -->
 <div class="fundo-nomes" id="fundo"></div>
 
 <header>
-<h1>🎒 Mochila Virtual - 2º Ano 💖</h1>
+<h1>🎒 Mochila Virtual - Evelym 💖</h1>
 </header>
 
 <div class="container">
@@ -162,23 +162,11 @@ cursor:pointer;
 <div class="disciplina"><h2>🔬 Física</h2><textarea></textarea><input type="file"></div>
 <div class="disciplina"><h2>🧬 Biologia</h2><textarea></textarea><input type="file"></div>
 <div class="disciplina"><h2>🌎 Inglês</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🎨 Artes</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🏃 Educação Física</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🤔 Filosofia</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>👥 Sociologia</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🌱 Projeto de Vida</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>💻 Lógica de Programação</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🌐 Programação Web</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>☕ POO Java</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>⚙️ Soluções Operacionais</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>📚 Estudos Orientados</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🖥️ Arquitetura e Manutenção</h2><textarea></textarea><input type="file"></div>
-<div class="disciplina"><h2>🤖 Noções de Robótica</h2><textarea></textarea><input type="file"></div>
 
 </div>
 
 <footer>
-💖 Feito com muito amor - Minha Mochila Virtual 2026 💖
+💖 Feito com amor por Evelym 💖
 </footer>
 
 <script>
@@ -187,17 +175,17 @@ cursor:pointer;
 function entrar(){
 let senha = document.getElementById("senha").value;
 
-if(senha === "1234"){ // ← sua senha aqui
+if(senha.toLowerCase() === "evelym"){
 document.getElementById("login").style.display = "none";
 }else{
 alert("Senha incorreta!");
 }
 }
 
-// GERAR NOMES NO FUNDO
+// NOMES NO FUNDO (30)
 let fundo = document.getElementById("fundo");
 
-for(let i=0; i<40; i++){
+for(let i=0; i<30; i++){
 let nome = document.createElement("div");
 nome.className = "nome";
 nome.innerText = "Evelym 💖";
