@@ -11,6 +11,20 @@ font-family: Arial, sans-serif;
 background-color:#ffd6e7;
 margin:0;
 padding:0;
+
+/* Fundo com corações */
+background-image: url('https://i.imgur.com/8QfQG6S.png');
+background-size: 200px;
+}
+
+/* Tela mais larga (deitada) */
+.container{
+padding:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:15px;
+max-width:1400px;
+margin:auto;
 }
 
 header{
@@ -18,20 +32,19 @@ background-color:#ff69b4;
 color:white;
 padding:20px;
 text-align:center;
-}
-
-.container{
-padding:20px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
+border-bottom:3px solid #ff4fa3;
 }
 
 .disciplina{
 background-color:#fff0f6;
 padding:15px;
-border-radius:10px;
-box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+border-radius:15px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.disciplina:hover{
+transform:scale(1.05);
 }
 
 h2{
@@ -41,12 +54,13 @@ font-size:16px;
 
 textarea{
 width:100%;
-height:50px;
+height:60px;
 margin-top:10px;
 background-color:#ffe4ef;
 border:1px solid #ff69b4;
-border-radius:5px;
+border-radius:8px;
 resize:none;
+padding:5px;
 }
 
 input[type="file"]{
@@ -66,7 +80,7 @@ background-color:#ff69b4;
 color:white;
 border:none;
 padding:8px 12px;
-border-radius:5px;
+border-radius:8px;
 cursor:pointer;
 margin-top:10px;
 }
@@ -81,135 +95,36 @@ background-color:#ff4fa3;
 <body>
 
 <header>
-<h1>🎒 Mochila Virtual - 2º Ano do Ensino Médio</h1>
+<h1>🎒 Mochila Virtual - 2º Ano 💖</h1>
 </header>
 
 <div class="container">
 
-<div class="disciplina">
-<h2>📘 Matemática</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>📗 Português</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>📕 História</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>📙 Geografia</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🧪 Química</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🔬 Física</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🧬 Biologia</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🌎 Inglês</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🎨 Artes</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🏃 Educação Física</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🤔 Filosofia</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>👥 Sociologia</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🌱 Projeto de Vida</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>💻 Lógica de Programação</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🌐 Programação Web</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>☕ POO Java</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>⚙️ Soluções Operacionais</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>📚 Estudos Orientados</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🖥️ Arquitetura e Manutenção</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
-
-<div class="disciplina">
-<h2>🤖 Noções de Robótica</h2>
-<textarea placeholder="Anotações..."></textarea>
-<input type="file">
-</div>
+<div class="disciplina"><h2>📘 Matemática</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>📗 Português</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>📕 História</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>📙 Geografia</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🧪 Química</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🔬 Física</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🧬 Biologia</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🌎 Inglês</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🎨 Artes</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🏃 Educação Física</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🤔 Filosofia</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>👥 Sociologia</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🌱 Projeto de Vida</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>💻 Lógica de Programação</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🌐 Programação Web</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>☕ POO Java</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>⚙️ Soluções Operacionais</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>📚 Estudos Orientados</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🖥️ Arquitetura e Manutenção</h2><textarea></textarea><input type="file"></div>
+<div class="disciplina"><h2>🤖 Noções de Robótica</h2><textarea></textarea><input type="file"></div>
 
 </div>
 
 <footer>
-© 2026 - Minha Mochila Virtual
+💖 Feito com muito amor - Minha Mochila Virtual 2026 💖
 </footer>
 
 </body>
